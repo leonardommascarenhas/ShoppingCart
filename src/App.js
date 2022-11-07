@@ -1,9 +1,9 @@
-import ShoppingCart from "./Components/ShoppingCart";
+import Header from "./Modules/Header/Header";
 
 function App() {
   return (
-    <div className="App">
-      <ShoppingCart />
+    <div className="h-screen">
+      <Header />
     </div>
   );
 }

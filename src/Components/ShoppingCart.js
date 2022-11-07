@@ -1,7 +1,7 @@
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const ShoppingCart = () => {
-  return <span>{<AiOutlineShoppingCart size={28} />}</span>;
+  return <span className="message-icons">{<AiOutlineShoppingCart size={28} />}</span>;
 };
 
 export default ShoppingCart;
