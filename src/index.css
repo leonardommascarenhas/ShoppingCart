@@ -11,4 +11,8 @@
     *{
       @apply m-0 p-0 box-border  
     }
+    .menu-link{
+        @apply relative text-lg no-underline after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-0.5 after:transition-all after:ease-in-out after:bg-red-800 hover:after:w-full hover:after:left-0
+    }
+ 
 }
