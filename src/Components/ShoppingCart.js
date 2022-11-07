@@ -2,7 +2,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const ShoppingCart = () => {
   return (
-    <span className="fixed right-0 h-10 w-10 m-7 shadow-lg rounded-3xl bg-black text-green-400 flex items-center justify-center">
+    <span className="absolute right-0 m-7 w-10 h-10 rounded-full shadow-lg bg-black text-white flex items-center justify-center cursor-pointer">
       {<AiOutlineShoppingCart size={28} />}
     </span>
   );
