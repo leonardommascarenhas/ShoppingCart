@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        title: ["IBM"],
+        title: ["Roboto"],
       },
     },
   },
