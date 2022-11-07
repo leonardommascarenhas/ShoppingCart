@@ -1,8 +1,8 @@
 const Header = () => {
   return (
-    <header className="w-screen flex flex-col items-center font-title min-h-[120px] md:h-40 shadow-lg">
+    <header className="w-screen flex flex-col justify-center items-center font-title min-h-[120px] md:h-40 shadow-lg">
       <div className="max-w-md md:w-1/2">
-        <div className="title flex flex-col items-center cursor-pointer pt-1">
+        <div className="title flex flex-col justify-center items-center cursor-pointer">
           <h1 className="text-[54px]">GBN</h1>
           <p className="-m-2">Generic Brand Name</p>
         </div>
