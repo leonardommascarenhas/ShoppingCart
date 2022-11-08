@@ -2,10 +2,8 @@ const Header = () => {
   return (
     <header className="w-screen flex flex-col justify-center items-center font-title min-h-[120px] md:h-40 shadow-lg">
       <div className="flex flex-col justify-center items-center">
-        <div className="title cursor-pointer">
-          <h1 className="text-[54px]">GBN</h1>
-          <p className="-m-2">Generic Brand Name</p>
-        </div>
+        <h1 className="text-[54px]">GBN</h1>
+        <p className="-m-2">Generic Brand Name Slogan</p>
         <div className="hidden md:block md:w-full p-4 mt-2">
           <List />
         </div>

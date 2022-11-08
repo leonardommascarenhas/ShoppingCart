@@ -1,6 +1,8 @@
 import MainSlider from "../../Components/MainSlider";
 
 const Body = () => {
-  <MainSlider />;
+  <main>
+    <MainSlider />;
+  </main>;
 };
 export default Body;
