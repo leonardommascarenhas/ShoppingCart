@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, EffectFade } from "swiper";
@@ -14,18 +13,10 @@ const MainSlider = () => {
   return (
     <>
       {
-        <Swiper
-          modules={[Navigation, EffectFade]}
-          navigation
-          effect
-          speed={800}
-          slidesPerView={1}
-          loop
-          className="w-screen"
-        >
+        <Swiper modules={[Navigation, EffectFade]} navigation effect speed={800} slidesPerView={1} loop>
           {images.map((image) => (
-            <SwiperSlide key={image} className="aspect-w-4 aspect-h-5">
-              <img src={image} className="w-full h-[58vw] object-cover"></img>
+            <SwiperSlide key={image}>
+              <img src={image} className="w-[99vw] h-[52vw] object-cover"></img>
             </SwiperSlide>
           ))}
         </Swiper>
