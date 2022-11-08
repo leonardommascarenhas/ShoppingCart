@@ -1,3 +1,5 @@
+import MainSlider from "../../Components/MainSlider";
+
 const Body = () => {
   <MainSlider />;
 };
