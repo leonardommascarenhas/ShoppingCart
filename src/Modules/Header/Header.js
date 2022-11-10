@@ -4,7 +4,7 @@ const Header = () => {
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-[54px]">GBN</h1>
         <p className="-m-2">Generic Brand Name Slogan</p>
-        <div className="hidden sm:block sm:w-full p-4 mt-2">
+        <div className="hidden min-[500px]:block w-full p-4 mt-2">
           <List />
         </div>
       </div>

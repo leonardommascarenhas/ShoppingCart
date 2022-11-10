@@ -1,8 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Navigation, EffectFade, Autoplay } from "swiper";
+import { Navigation, EffectFade, Autoplay, Pagination } from "swiper";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
+import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import img1 from "../imgs/mainSlider-1.jpg";
 import img2 from "../imgs/mainSlider-2.jpg";
@@ -15,17 +16,22 @@ const MainSlider = () => {
     <>
       {
         <Swiper
-          modules={[Navigation, EffectFade, Autoplay]}
+          modules={[Navigation, EffectFade, Autoplay, Pagination]}
           navigation
           effect
           speed={800}
           slidesPerView={1}
           loop
+          grabCursor={true}
           autoplay={{ delay: 2100 }}
+          pagination={{
+            clickable: true,
+            bulletClass: `swiper-pagination-bullet`,
+          }}
         >
           {images.map((image) => (
             <SwiperSlide key={image}>
-              <img src={image} className="w-[99vw] h-[52vw] object-cover"></img>
+              <img src={image} className="w-[100vw] h-[52vw] object-cover"></img>
             </SwiperSlide>
           ))}
         </Swiper>
