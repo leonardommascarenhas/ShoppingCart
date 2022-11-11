@@ -1,5 +1,5 @@
 const Masculinas = () => {
-  return <div>Caralho eu to muito puto</div>;
+  return <div>Pagina extremamente mascula</div>;
 };
 
 export default Masculinas;
