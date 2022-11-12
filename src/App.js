@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Modules/Header/Header";
 import ShoppingCart from "./Components/ShoppingCart";
 import Home from "./Pages/Home";
@@ -11,11 +11,13 @@ const App = () => {
       <BrowserRouter>
         <ShoppingCart />
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="masculinas" element={<Masculinas />} />
-          <Route path="femininas" element={<Femininas />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="masculinas" element={<Masculinas />} />
+            <Route path="femininas" element={<Femininas />} />
+          </Routes>
+        </main>
       </BrowserRouter>
     </>
   );
