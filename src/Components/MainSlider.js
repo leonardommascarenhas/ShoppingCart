@@ -25,6 +25,8 @@ const MainSlider = () => {
           grabCursor={true}
           autoplay={{ delay: 2100 }}
           pagination={{
+            el: ".swiper-pagination",
+            type: "bullets",
             clickable: true,
             bulletClass: `swiper-pagination-bullet`,
           }}
@@ -34,6 +36,7 @@ const MainSlider = () => {
               <img src={image} className="w-[100vw] h-[52vw] object-cover"></img>
             </SwiperSlide>
           ))}
+          <div className="swiper-pagination"></div>
         </Swiper>
       }
     </>

@@ -5,16 +5,24 @@
 @tailwind components;
 @tailwind utilities;
 
+  .swiper-pagination {
+      position: absolute;
+      right: 10px;
+      width: auto !important;
+      left: auto !important;
+      margin: 0;
+  }
+
 
 @layer components{
-     
     .menu-link{
         @apply relative text-lg font-light no-underline after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-0.5 after:transition-all after:ease-in-out after:bg-red-800 hover:after:w-full hover:after:left-0
     }
-    .main-container{
-        @apply absolute right-5 bottom-6
-    }
-  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+     span.swiper-pagination-bullet.swiper-pagination-bullet-active {
      @apply bg-gray-500 
-  }
+    } 
+     span.swiper-pagination-bullet{
+     @apply w-4 h-4
+    } 
+  
 }
