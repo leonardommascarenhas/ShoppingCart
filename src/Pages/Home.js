@@ -1,4 +1,4 @@
-import MainSlider from "../Components/MainSlider";
+import MainSlider from "../Components/Sliders/MainSlider";
 function Home() {
   return (
     <>
