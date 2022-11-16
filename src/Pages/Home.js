@@ -5,10 +5,11 @@ import img2 from "../imgs/Black-shirts/Masculino/luis-quintero-3qqiMT2LdR8-unspl
 import img3 from "../imgs/Black-shirts/Masculino/pexels-jansel-ferma-2315303.jpg";
 
 function Home() {
+  const arr = [img1, img2, img3];
   return (
     <>
       <MainSlider />
-      <SectionSlider />
+      <SectionSlider images={arr} />
     </>
   );
 }

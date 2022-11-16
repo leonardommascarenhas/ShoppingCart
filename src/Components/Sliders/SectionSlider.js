@@ -2,29 +2,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation } from "swiper";
 
-const SectionSlider = ({ ...img }) => {
+const SectionSlider = ({ images }) => {
   return (
     <>
       {
         <Swiper modules={[Navigation]} slidesPerView={4} spaceBetween={20} navigation>
-          <SwiperSlide>
-            <Card itemImage={img.src} itemDescription={img.name} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card itemImage={img.src} itemDescription={img.name} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card itemImage={img.src} itemDescription={img.name} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card itemImage={img.src} itemDescription={img.name} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card itemImage={img.src} itemDescription={img.name} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card itemImage={img.src} itemDescription={img.name} />
-          </SwiperSlide>
+          {images.map((image) => (
+            <SwiperSlide key={image}>
+              <Card itemImage={image} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       }
     </>
