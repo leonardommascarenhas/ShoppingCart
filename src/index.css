@@ -14,6 +14,7 @@
   }
 
 
+
 @layer components{
     .menu-link{
         @apply relative text-lg font-light no-underline after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-0.5 after:transition-all after:ease-in-out after:bg-red-800 hover:after:w-full hover:after:left-0
@@ -25,6 +26,6 @@
      @apply w-4 h-4
     } 
     .section-slider-image{
-        @apply h-4/5 object-cover
+        @apply h-4/5 
     }
 }

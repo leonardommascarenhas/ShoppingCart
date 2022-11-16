@@ -2,15 +2,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation } from "swiper";
 
-const SectionSlider = ({ images }) => {
+const SectionSlider = ({ products }) => {
   return (
     <section>
       <h2 className="text-center mt-7">Camisas pretas</h2>
       {
-        <Swiper modules={[Navigation]} slidesPerView={4} spaceBetween={20} navigation>
-          {images.map((image) => (
-            <SwiperSlide key={image.id}>
-              <Card itemImage={image.imageSrc} itemDescription={image.description} />
+        <Swiper modules={[Navigation]} slidesPerView={4} navigation grabCursor={true} spaceBetween={20}>
+          {products.map((product) => (
+            <SwiperSlide key={product.id}>
+              <Card
+                productImage={product.imageSrc}
+                productDescription={product.description}
+                itemPrice={product}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -19,13 +23,13 @@ const SectionSlider = ({ images }) => {
   );
 };
 
-const Card = ({ itemImage, itemImageAlt, itemDescription, price }) => {
+const Card = ({ productImage, productImageAlt, productDescription, price }) => {
   return (
-    <div className="h-[300px] w-[200px] mt-5">
-      <img className="section-slider-image" src={itemImage} alt={itemImageAlt}></img>
-      <p>{itemDescription}</p>
+    <>
+      <img className="section-slider-image" src={productImage} alt={productImageAlt}></img>
+      <p>{productDescription}</p>
       <p>{price}</p>
-    </div>
+    </>
   );
 };
 
