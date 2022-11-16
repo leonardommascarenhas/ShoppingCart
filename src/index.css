@@ -5,6 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* swiper styles */
+
   .swiper-pagination {
       position: absolute;
       right: 10px;
@@ -12,7 +14,9 @@
       left: auto !important;
       margin: 0;
   }
-
+    .swiper-slide {
+    height: auto !important
+}
 
 
 @layer components{
