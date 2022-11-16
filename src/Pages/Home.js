@@ -5,7 +5,21 @@ import img2 from "../imgs/Black-shirts/Masculino/luis-quintero-3qqiMT2LdR8-unspl
 import img3 from "../imgs/Black-shirts/Masculino/pexels-jansel-ferma-2315303.jpg";
 
 function Home() {
-  const arr = [img1, img2, img3];
+  const arr = [
+    {
+      imageSrc: img1,
+      description: "Manga curta preta",
+      alt: "Camisa manga curta preta",
+      price: "249,90",
+    },
+    {
+      imageSrc: img2,
+      description: "teste",
+      alt: "Camisa manga curta preta 2",
+      price: "249,90",
+    },
+    { img3 },
+  ];
   return (
     <>
       <MainSlider />
