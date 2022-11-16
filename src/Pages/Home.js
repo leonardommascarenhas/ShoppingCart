@@ -6,17 +6,17 @@ import img3 from "../imgs/Black-shirts/Masculino/pexels-jansel-ferma-2315303.jpg
 import img4 from "../imgs/Black-shirts/Masculino/white-striped.jpg";
 
 function Home() {
-  const arr = [
+  const blackShirts = [
     {
       imageSrc: img1,
-      description: "Manga curta preta",
+      description: "Basic 1",
       alt: "Camisa manga curta preta",
-      price: "249,90",
+      price: "149,90",
       id: 12783612873,
     },
     {
       imageSrc: img2,
-      description: "Camisa manga curta preta 2",
+      description: "Basic 2",
       alt: "Camisa manga curta preta 2",
       price: "249,90",
       id: 1298378912,
@@ -33,13 +33,13 @@ function Home() {
       description: "White Striped ",
       alt: "white striped shirt",
       price: "249,90",
-      id: 1289371902783,
+      id: 128937190278,
     },
   ];
   return (
     <>
       <MainSlider />
-      <SectionSlider products={arr} />
+      <SectionSlider products={blackShirts} />
     </>
   );
 }
