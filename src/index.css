@@ -7,16 +7,38 @@
 
 /* swiper styles */
 
-  .swiper-pagination {
-      position: absolute;
-      right: 10px;
-      width: auto !important;
-      left: auto !important;
-      margin: 0;
-  }
-    .swiper-slide { 
-    height: auto !important;
-    text-align: center;
+
+
+   .swiper-pagination {
+       position: absolute;
+       right: 10px;
+       width: auto !important;
+       left: auto !important;
+       margin: 0;
+   }
+
+   .swiper-slide {
+       height: auto !important;
+       text-align: center;
+   }
+.swiper-content {
+    height: 100% !important
+}/* the new container */
+.swiper-container {
+    position: relative;
+    width: 100%;
+    padding: 0 40px;
+}
+
+/* fix the buttons positions */
+.section-slider.swiper-button-next {
+    right: 4px;
+    top: 40%;
+}
+
+.section-slider.swiper-button-prev {
+    left: 4px;
+    top: 40%
 }
 
 
@@ -31,6 +53,6 @@
      @apply w-4 h-4
     } 
     .section-slider-image{
-        @apply h-4/5 w-full
+        @apply h-4/5 w-full cursor-pointer
     }
 }

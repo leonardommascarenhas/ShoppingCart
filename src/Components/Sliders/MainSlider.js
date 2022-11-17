@@ -19,7 +19,7 @@ const MainSlider = () => {
           modules={[Navigation, EffectFade, Autoplay, Pagination]}
           navigation
           effect
-          speed={800}
+          speed={1000}
           slidesPerView={1}
           loop
           grabCursor={true}

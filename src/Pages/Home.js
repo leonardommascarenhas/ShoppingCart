@@ -23,14 +23,14 @@ function Home() {
     },
     {
       imageSrc: img3,
-      description: "Camisa manga curta preta empower",
+      description: "Branded",
       alt: "Camisa manga curta preta 2",
       price: "249,90",
       id: 1289371902783,
     },
     {
       imageSrc: img4,
-      description: "White Striped ",
+      description: "White Striped",
       alt: "white striped shirt",
       price: "249,90",
       id: 128937190278,
@@ -39,6 +39,8 @@ function Home() {
   return (
     <>
       <MainSlider />
+      <SectionSlider products={blackShirts} />
+      <SectionSlider products={blackShirts} />
       <SectionSlider products={blackShirts} />
     </>
   );
