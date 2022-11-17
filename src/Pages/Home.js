@@ -40,8 +40,6 @@ function Home() {
     <>
       <MainSlider />
       <SectionSlider products={blackShirts} />
-      <SectionSlider products={blackShirts} />
-      <SectionSlider products={blackShirts} />
     </>
   );
 }

@@ -31,15 +31,7 @@
 }
 
 /* fix the buttons positions */
-.section-slider.swiper-button-next {
-    right: 4px;
-    top: 40%;
-}
 
-.section-slider.swiper-button-prev {
-    left: 4px;
-    top: 40%
-}
 
 
 @layer components{
@@ -55,4 +47,10 @@
     .section-slider-image{
         @apply h-4/5 w-full cursor-pointer
     }
+    .swiper-left{
+        @apply absolute top-[40%] left-4 -translate-y-[40%] z-20 flex 
+    }                                                                    
+    .swiper-right{
+        @apply absolute top-[40%] right-4 -translate-y-[40%] z-20 flex 
+    }                                                                    
 }

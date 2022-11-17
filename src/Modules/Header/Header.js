@@ -2,7 +2,7 @@ import { Link, Route, Routes } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="w-screen flex flex-col justify-center items-center font-title min-h-[120px] md:h-40 shadow-lg">
+    <header className="w-full flex flex-col justify-center items-center font-title min-h-[120px] md:h-40 shadow-lg">
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-[54px]">GBN</h1>
         <p className="-m-2">Generic Brand Name Slogan</p>

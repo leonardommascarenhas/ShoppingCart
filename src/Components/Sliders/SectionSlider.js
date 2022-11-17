@@ -2,6 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
+import { BsArrowRightCircle } from "react-icons/bs";
+import { BsArrowLeftCircle } from "react-icons/bs";
 
 const SectionSlider = ({ products }) => {
   return (
@@ -10,11 +12,13 @@ const SectionSlider = ({ products }) => {
       <div className="swiper-container">
         {
           <Swiper
+            observeParents={true}
+            observer={true}
             className="section-slider"
             modules={[Navigation]}
             navigation={{
-              nextEl: "section-slider swiper-button-next",
-              prevEl: "section-slider prev-arrow",
+              nextEl: ".swiper-right",
+              prevEl: ".swiper-left",
             }}
             speed={1200}
             spaceBetween={20}
@@ -42,12 +46,7 @@ const SectionSlider = ({ products }) => {
             loop
           >
             {products.map((product) => (
-              <SwiperSlide
-                key={product.id}
-                onClick={() => {
-                  alert(`${product.price}`);
-                }}
-              >
+              <SwiperSlide key={product.id}>
                 <Card
                   productImage={product.imageSrc}
                   productDescription={product.description}
@@ -57,8 +56,12 @@ const SectionSlider = ({ products }) => {
             ))}
           </Swiper>
         }
-        <div className="section-slider swiper-button-next"></div>
-        <div className="section-slider swiper-button-prev"></div>
+        <span className="swiper-left">
+          <BsArrowLeftCircle />
+        </span>
+        <span className="swiper-right">
+          <BsArrowRightCircle />
+        </span>
       </div>
     </section>
   );
