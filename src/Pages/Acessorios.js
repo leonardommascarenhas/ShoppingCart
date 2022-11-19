@@ -1,5 +1,5 @@
 const Acessorios = () => {
-  return <div>Caralho eu to muito puto</div>;
+  return <div>Acessorios Maneiros</div>;
 };
 
 export default Acessorios;
