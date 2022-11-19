@@ -57,10 +57,10 @@ const SectionSlider = ({ products }) => {
           </Swiper>
         }
         <span className="swiper-left">
-          <BsArrowLeftCircle />
+          <BsArrowLeftCircle size={18} />
         </span>
         <span className="swiper-right">
-          <BsArrowRightCircle />
+          <BsArrowRightCircle size={18} />
         </span>
       </div>
     </section>
