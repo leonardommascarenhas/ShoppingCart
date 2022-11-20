@@ -1,4 +1,5 @@
 import React from "react";
+
 import img1 from "../imgs/Black-shirts/Masculino/allef-vinicius-flFI_7Rs6Ik-unsplash.jpg";
 import img2 from "../imgs/Black-shirts/Masculino/luis-quintero-3qqiMT2LdR8-unsplash.jpg";
 import img3 from "../imgs/Black-shirts/Masculino/pexels-jansel-ferma-2315303.jpg";
@@ -14,6 +15,7 @@ export const AuthProvider = (props) => {
       alt: "Camisa manga curta preta",
       price: "149,90",
       id: 12783612873,
+      link: "basic-1",
     },
     {
       imageSrc: img2,
@@ -21,6 +23,7 @@ export const AuthProvider = (props) => {
       alt: "Camisa manga curta preta 2",
       price: "249,90",
       id: 1298378912,
+      link: "basic-2",
     },
     {
       imageSrc: img3,
@@ -28,6 +31,7 @@ export const AuthProvider = (props) => {
       alt: "Camisa manga curta preta 2",
       price: "249,90",
       id: 1289371902783,
+      link: "branded",
     },
     {
       imageSrc: img4,
@@ -35,6 +39,7 @@ export const AuthProvider = (props) => {
       alt: "white striped shirt",
       price: "249,90",
       id: 128937190278,
+      link: "whiteStriped",
     },
   ];
 
