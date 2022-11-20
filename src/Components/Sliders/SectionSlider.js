@@ -4,8 +4,12 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { BsArrowLeftCircle } from "react-icons/bs";
+import { useNavigate, useParams } from "react-router-dom";
 
 const SectionSlider = ({ products }) => {
+  let navigate = useNavigate();
+  let { product } = useParams();
+
   return (
     <section>
       <h2 className="text-center my-7">Camisas pretas</h2>
@@ -46,7 +50,12 @@ const SectionSlider = ({ products }) => {
             loop
           >
             {products.map((product) => (
-              <SwiperSlide key={product.id}>
+              <SwiperSlide
+                key={product.id}
+                onClick={() => {
+                  navigate(`/collection/${product.link}`);
+                }}
+              >
                 <Card
                   productImage={product.imageSrc}
                   productDescription={product.description}
