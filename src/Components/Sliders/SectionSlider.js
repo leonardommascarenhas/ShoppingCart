@@ -56,7 +56,7 @@ const SectionSlider = ({ products }) => {
               >
                 <Card
                   productImage={product.imageSrc}
-                  productDescription={product.description}
+                  productName={product.name}
                   productPrice={product.price}
                 />
               </SwiperSlide>
@@ -74,11 +74,11 @@ const SectionSlider = ({ products }) => {
   );
 };
 
-const Card = ({ productImage, productImageAlt, productDescription, productPrice }) => {
+const Card = ({ productImage, productImageAlt, productName, productPrice }) => {
   return (
     <div className="swiper-content">
       <img className="section-slider-image" src={productImage} alt={productImageAlt}></img>
-      <p>{productDescription}</p>
+      <p>{productName}</p>
       <p>{productPrice}</p>
     </div>
   );
