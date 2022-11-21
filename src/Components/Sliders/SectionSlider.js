@@ -5,12 +5,12 @@ import { Navigation } from "swiper";
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 
-const SectionSlider = ({ products }) => {
+const SectionSlider = ({ products, title }) => {
   let navigate = useNavigate();
 
   return (
     <section>
-      <h2 className="text-center my-7">Camisas pretas</h2>
+      <h2 className="text-center my-7">{title}</h2>
       <div className="swiper-container">
         {
           <Swiper

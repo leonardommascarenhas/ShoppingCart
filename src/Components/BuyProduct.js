@@ -3,7 +3,7 @@ import React from "react";
 import { AuthContext } from "../Providers/auth";
 
 const BuyProduct = () => {
-  const clothes = React.useContext(AuthContext);
+  const { clothes } = React.useContext(AuthContext);
 
   let { product } = useParams();
 

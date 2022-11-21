@@ -1,10 +1,21 @@
 import React from "react";
 
+//black shirts
 import img1 from "../imgs/Black-shirts/Masculino/allef-vinicius-flFI_7Rs6Ik-unsplash.jpg";
 import img2 from "../imgs/Black-shirts/Masculino/luis-quintero-3qqiMT2LdR8-unsplash.jpg";
 import img3 from "../imgs/Black-shirts/Masculino/pexels-jansel-ferma-2315303.jpg";
 import img4 from "../imgs/Black-shirts/Masculino/white-striped.jpg";
 import img5 from "../imgs/Black-shirts/Feminino/vlah-dumitru-SeeiNC9snZg-unsplash.jpg";
+
+//acessorios
+import bone1 from "../imgs/Acessorios/Bonés/hassan-ouajbir-Q-EWbNrfvVU-unsplash.jpg";
+import bone2 from "../imgs/Acessorios/Bonés/joe-ciciarelli-FwVnAY_xMaY-unsplash.jpg";
+import bone3 from "../imgs/Acessorios/Bonés/photo-1588850561407-ed78c282e89b.jpg";
+import touca1 from "../imgs/Acessorios/Toucas/dushawn-jovic-cruUfe5g1Zk-unsplash.jpg";
+import touca2 from "../imgs/Acessorios/Toucas/jordan-whitfield-Lprffwrv9cY-unsplash.jpg";
+import touca3 from "../imgs/Acessorios/Toucas/logan-weaver-lgnwvr-C47a33QNi18-unsplash.jpg";
+import touca4 from "../imgs/Acessorios/Toucas/taan-huyn-gIrrIydPu6U-unsplash.jpg";
+import touca5 from "../imgs/Acessorios/Toucas/yannic-laderach-nwR9BCNgZJc-unsplash.jpg";
 
 export const AuthContext = React.createContext([]);
 
@@ -52,5 +63,16 @@ export const AuthProvider = (props) => {
     },
   ];
 
-  return <AuthContext.Provider value={clothes}>{props.children}</AuthContext.Provider>;
+  const acessorios = [
+    {
+      imageSrc: bone1,
+      name: "Basic F",
+      alt: "Black shirt F",
+      price: "89,90",
+      id: 228937130278,
+      link: "whiteStriped",
+    },
+  ];
+
+  return <AuthContext.Provider value={{ clothes, acessorios }}>{props.children}</AuthContext.Provider>;
 };
