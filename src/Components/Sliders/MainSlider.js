@@ -5,9 +5,9 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import img1 from "../../imgs/mainSlider-1.jpg";
-import img2 from "../../imgs/mainSlider-2.jpg";
-import img3 from "../../imgs/mainSlider-3.jpg";
+import img1 from "../../imgs/MainSlider/mainSlider-1.jpg";
+import img2 from "../../imgs/MainSlider/mainSlider-2.jpg";
+import img3 from "../../imgs//MainSlider/mainSlider-3.jpg";
 
 const MainSlider = () => {
   const images = [img1, img2, img3];
