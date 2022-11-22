@@ -11,9 +11,9 @@ const Masculinas = () => {
   });
 
   return (
-    <div>
+    <div className="display-section-container">
       {masculineClothes.map((cloth) => (
-        <div key={cloth.id} onClick={() => navigate(`/collection/${cloth.link}`)}>
+        <div key={cloth.id} onClick={() => navigate(`/collection/${cloth.link}`)} className="section-display">
           <Card productImage={cloth.imageSrc} productName={cloth.name} productPrice={cloth.price} />
         </div>
       ))}
