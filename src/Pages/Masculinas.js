@@ -14,7 +14,7 @@ const Masculinas = () => {
     <div>
       {masculineClothes.map((cloth) => (
         <div key={cloth.id} onClick={() => navigate(`/collection/${cloth.link}`)}>
-          <Card productImage={cloth.imageSrc} />
+          <Card productImage={cloth.imageSrc} productName={cloth.name} productPrice={cloth.price} />
         </div>
       ))}
     </div>
