@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Femininas from "./Pages/Femininas";
 import Masculinas from "./Pages/Masculinas";
 import BuyProduct from "./Components/BuyProduct";
+import Acessorios from "./Pages/Acessorios";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             <Route path="/collection/:product" element={<BuyProduct />} />
             <Route path="masculinas" element={<Masculinas />} />
             <Route path="femininas" element={<Femininas />} />
+            <Route path="acessorios" element={<Acessorios />} />
           </Routes>
         </main>
       </BrowserRouter>

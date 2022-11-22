@@ -25,6 +25,9 @@ const List = () => {
         <Link to="/femininas" className="menu-link">
           Femininas
         </Link>
+        <Link to="/acessorios" className="menu-link">
+          Acessorios
+        </Link>
       </nav>
     </>
   );
