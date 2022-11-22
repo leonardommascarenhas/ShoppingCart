@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../Providers/auth";
 import Card from "../Components/Card";
-
 import { useNavigate } from "react-router-dom";
+
 const Acessorios = () => {
   const { acessorios } = React.useContext(AuthContext);
   let navigate = useNavigate();

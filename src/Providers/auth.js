@@ -28,6 +28,7 @@ export const AuthProvider = (props) => {
       price: "89,90",
       id: 12783612873,
       link: "basic-1",
+      gender: "M",
     },
     {
       imageSrc: img2,
@@ -36,6 +37,7 @@ export const AuthProvider = (props) => {
       price: "89,90",
       id: 1298378912,
       link: "basic-2",
+      gender: "M",
     },
     {
       imageSrc: img3,
@@ -44,6 +46,7 @@ export const AuthProvider = (props) => {
       price: "249,90",
       id: 1289371902783,
       link: "branded",
+      gender: "M",
     },
     {
       imageSrc: img4,
@@ -52,6 +55,7 @@ export const AuthProvider = (props) => {
       price: "149,90",
       id: 128937190278,
       link: "whiteStriped",
+      gender: "M",
     },
     {
       imageSrc: img5,
@@ -60,6 +64,7 @@ export const AuthProvider = (props) => {
       price: "89,90",
       id: 128937130278,
       link: "whiteStriped",
+      gender: "F",
     },
   ];
 
