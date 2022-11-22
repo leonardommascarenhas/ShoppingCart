@@ -9,7 +9,7 @@ function Home() {
   return (
     <>
       <MainSlider />
-      <SectionSlider products={blackShirts} title="camisa pretas" />
+      <SectionSlider products={blackShirts} title="Camisas Pretas" />
       <SectionSlider products={acessorios} title="Acessorios" />
     </>
   );

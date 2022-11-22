@@ -51,12 +51,7 @@
         @apply absolute top-[40%] right-4 -translate-y-[40%] z-20 flex 
     }
     .display-section-container{
-        @apply px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4
+        @apply px-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4
     }
-    .section-display {
-        @apply h-[478px]
-    }
-    .section-display > img{
-        @apply min-h-[430px]
-    }                                                          
+                                                  
 }
