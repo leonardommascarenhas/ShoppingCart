@@ -4,12 +4,12 @@ import SectionSlider from "../Components/Sliders/SectionSlider";
 import { AuthContext } from "../Providers/auth";
 
 function Home() {
-  const { clothes, acessorios } = React.useContext(AuthContext);
+  const { blackShirts, acessorios } = React.useContext(AuthContext);
 
   return (
     <>
       <MainSlider />
-      <SectionSlider products={clothes} title="camisa pretas" />
+      <SectionSlider products={blackShirts} title="camisa pretas" />
       <SectionSlider products={acessorios} title="Acessorios" />
     </>
   );

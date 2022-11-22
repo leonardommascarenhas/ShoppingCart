@@ -20,7 +20,7 @@ import touca5 from "../imgs/Acessorios/Toucas/yannic-laderach-nwR9BCNgZJc-unspla
 export const AuthContext = React.createContext([]);
 
 export const AuthProvider = (props) => {
-  const clothes = [
+  const blackShirts = [
     {
       imageSrc: img1,
       name: "Basic 1 M",
@@ -66,13 +66,17 @@ export const AuthProvider = (props) => {
   const acessorios = [
     {
       imageSrc: bone1,
-      name: "Basic F",
-      alt: "Black shirt F",
-      price: "89,90",
+      name: "Bone NY Estampado",
+      alt: "Bone NY estampado",
+      price: "124,90",
       id: 228937130278,
-      link: "whiteStriped",
+      link: "ny-estampado",
     },
   ];
 
-  return <AuthContext.Provider value={{ clothes, acessorios }}>{props.children}</AuthContext.Provider>;
+  const clothes = blackShirts.concat(acessorios);
+
+  return (
+    <AuthContext.Provider value={{ blackShirts, acessorios, clothes }}>{props.children}</AuthContext.Provider>
+  );
 };
