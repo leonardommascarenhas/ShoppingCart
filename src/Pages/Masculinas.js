@@ -1,5 +1,24 @@
+import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import Card from "../Components/Card";
+import { AuthContext } from "../Providers/auth";
+
 const Masculinas = () => {
-  return <div>Pagina extremamente mascula</div>;
+  const { clothes } = React.useContext(AuthContext);
+  const navigate = useNavigate();
+  const masculineClothes = clothes.filter((cloth) => {
+    return cloth.gender === "M";
+  });
+
+  return (
+    <div>
+      {masculineClothes.map((cloth) => (
+        <div key={cloth.id} onClick={() => navigate(`/collection/${cloth.link}`)}>
+          <Card productImage={cloth.imageSrc} />
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default Masculinas;

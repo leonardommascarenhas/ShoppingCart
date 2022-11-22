@@ -3,11 +3,11 @@ import React from "react";
 import { AuthContext } from "../Providers/auth";
 
 const BuyProduct = () => {
-  const { clothes } = React.useContext(AuthContext);
+  const { allProducts } = React.useContext(AuthContext);
 
   let { product } = useParams();
 
-  const clickedCloth = clothes.filter((cloth) => {
+  const clickedCloth = allProducts.filter((cloth) => {
     return cloth.link === product;
   });
 

@@ -135,9 +135,13 @@ export const AuthProvider = (props) => {
     },
   ];
 
-  const clothes = blackShirts.concat(acessorios);
+  const clothes = blackShirts;
+
+  const allProducts = blackShirts.concat(acessorios);
 
   return (
-    <AuthContext.Provider value={{ blackShirts, acessorios, clothes }}>{props.children}</AuthContext.Provider>
+    <AuthContext.Provider value={{ blackShirts, acessorios, clothes, allProducts }}>
+      {props.children}
+    </AuthContext.Provider>
   );
 };
