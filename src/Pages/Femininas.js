@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import Card from "../Components/Card";
 import { AuthContext } from "../Providers/auth";
 
 const Femininas = () => {
@@ -9,7 +10,15 @@ const Femininas = () => {
     return cloth.gender === "F";
   });
 
-  return <div>Pagina extremamente feminina</div>;
+  return (
+    <div>
+      {feminineClothes.map((cloth) => (
+        <div key={cloth.id} onClick={() => navigate(`/collection/${cloth.link}`)}>
+          <Card productImage={cloth.imageSrc} productName={cloth.name} productPrice={cloth.price} />
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default Femininas;

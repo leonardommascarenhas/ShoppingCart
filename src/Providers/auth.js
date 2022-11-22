@@ -27,7 +27,7 @@ export const AuthProvider = (props) => {
       alt: "Camisa manga curta preta",
       price: "89,90",
       id: 12783612873,
-      link: "basic-1",
+      link: "basic-1-m",
       gender: "M",
     },
     {
@@ -36,7 +36,7 @@ export const AuthProvider = (props) => {
       alt: "Camisa manga curta preta 2",
       price: "89,90",
       id: 1298378912,
-      link: "basic-2",
+      link: "basic-2-m",
       gender: "M",
     },
     {
@@ -45,7 +45,7 @@ export const AuthProvider = (props) => {
       alt: "Camisa manga curta preta 2",
       price: "249,90",
       id: 1289371902783,
-      link: "branded",
+      link: "branded-m",
       gender: "M",
     },
     {
@@ -54,7 +54,7 @@ export const AuthProvider = (props) => {
       alt: "white striped shirt",
       price: "149,90",
       id: 128937190278,
-      link: "whiteStriped",
+      link: "whiteStriped-m",
       gender: "M",
     },
     {
@@ -63,7 +63,7 @@ export const AuthProvider = (props) => {
       alt: "Black shirt F",
       price: "89,90",
       id: 128937130278,
-      link: "whiteStriped",
+      link: "basic-black-female",
       gender: "F",
     },
   ];
