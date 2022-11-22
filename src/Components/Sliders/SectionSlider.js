@@ -6,7 +6,7 @@ import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import Card from "../Card";
 
-const SectionSlider = ({ products, title, navigation }) => {
+const SectionSlider = ({ products, title, sliderClass }) => {
   let navigate = useNavigate();
 
   return (
@@ -20,8 +20,8 @@ const SectionSlider = ({ products, title, navigation }) => {
             className="section-slider"
             modules={[Navigation]}
             navigation={{
-              nextEl: `.${navigation}`,
-              prevEl: `.${navigation}`,
+              nextEl: `.${sliderClass}`,
+              prevEl: `.${sliderClass}`,
             }}
             speed={1200}
             spaceBetween={20}
@@ -66,10 +66,10 @@ const SectionSlider = ({ products, title, navigation }) => {
             ))}
           </Swiper>
         }
-        <span className={`swiper-left ${navigation}`}>
+        <span className={`swiper-left ${sliderClass}`}>
           <BsArrowLeftCircle size={18} />
         </span>
-        <span className={`swiper-right ${navigation}`}>
+        <span className={`swiper-right ${sliderClass}`}>
           <BsArrowRightCircle size={18} />
         </span>
       </div>
