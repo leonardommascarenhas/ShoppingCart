@@ -4,6 +4,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+import Card from "../Card";
 
 const SectionSlider = ({ products, title }) => {
   let navigate = useNavigate();
@@ -54,11 +55,13 @@ const SectionSlider = ({ products, title }) => {
                   navigate(`/collection/${product.link}`);
                 }}
               >
-                <Card
-                  productImage={product.imageSrc}
-                  productName={product.name}
-                  productPrice={product.price}
-                />
+                <div className="swiper-content">
+                  <Card
+                    productImage={product.imageSrc}
+                    productName={product.name}
+                    productPrice={product.price}
+                  />
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -71,16 +74,6 @@ const SectionSlider = ({ products, title }) => {
         </span>
       </div>
     </section>
-  );
-};
-
-const Card = ({ productImage, productImageAlt, productName, productPrice }) => {
-  return (
-    <div className="swiper-content">
-      <img className="section-slider-image" src={productImage} alt={productImageAlt}></img>
-      <p>{productName}</p>
-      <p>{productPrice}</p>
-    </div>
   );
 };
 
