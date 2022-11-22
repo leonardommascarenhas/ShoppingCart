@@ -20,8 +20,8 @@ const SectionSlider = ({ products, title, navigation }) => {
             className="section-slider"
             modules={[Navigation]}
             navigation={{
-              nextEl: `.swiper-right ${navigation}`,
-              prevEl: `.swiper-left ${navigation}`,
+              nextEl: `.${navigation}`,
+              prevEl: `.${navigation}`,
             }}
             speed={1200}
             spaceBetween={20}
@@ -66,10 +66,10 @@ const SectionSlider = ({ products, title, navigation }) => {
             ))}
           </Swiper>
         }
-        <span className="swiper-left">
+        <span className={`swiper-left ${navigation}`}>
           <BsArrowLeftCircle size={18} />
         </span>
-        <span className="swiper-right">
+        <span className={`swiper-right ${navigation}`}>
           <BsArrowRightCircle size={18} />
         </span>
       </div>

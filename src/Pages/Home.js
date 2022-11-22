@@ -9,8 +9,8 @@ function Home() {
   return (
     <>
       <MainSlider />
-      <SectionSlider products={blackShirts} title="Camisas Pretas" />
-      <SectionSlider products={acessorios} title="Acessorios" />
+      <SectionSlider products={blackShirts} title="Camisas Pretas" navigation="teste" />
+      <SectionSlider products={acessorios} title="Acessorios" navigation="alo" />
     </>
   );
 }
