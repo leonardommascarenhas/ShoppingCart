@@ -6,6 +6,11 @@ import img2 from "../imgs/Black-shirts/Masculino/luis-quintero-3qqiMT2LdR8-unspl
 import img3 from "../imgs/Black-shirts/Masculino/pexels-jansel-ferma-2315303.jpg";
 import img4 from "../imgs/Black-shirts/Masculino/white-striped.jpg";
 import img5 from "../imgs/Black-shirts/Feminino/vlah-dumitru-SeeiNC9snZg-unsplash.jpg";
+import img6 from "../imgs/Black-shirts/Feminino/caique-nascimento-BOHyxqepP9Y-unsplash.jpg";
+
+//Hoodies
+import hoodie1 from "../imgs/Hoodies/drew-dizzy-graham-jL8v8KWGv3E-unsplash.jpg";
+import hoodie2 from "../imgs/Hoodies/hoodieee.jpg";
 
 //acessorios
 import bone1 from "../imgs/Acessorios/Bonés/hassan-ouajbir-Q-EWbNrfvVU-unsplash.jpg";
@@ -64,6 +69,15 @@ export const AuthProvider = (props) => {
       price: "89,90",
       id: 128937130278,
       link: "basic-black-female",
+      gender: "F",
+    },
+    {
+      imageSrc: img6,
+      name: "Crooped",
+      alt: "Black Crooped F",
+      price: "109,90",
+      id: 128930278,
+      link: "basic-Cropped-female",
       gender: "F",
     },
   ];
@@ -135,12 +149,31 @@ export const AuthProvider = (props) => {
     },
   ];
 
-  const clothes = blackShirts;
+  const hoodies = [
+    {
+      imageSrc: hoodie1,
+      name: "Branded Hoodie",
+      alt: "Branded Hoodie",
+      price: "249,90",
+      id: 63111116363127,
+      link: "branded-hoodie",
+    },
+    {
+      imageSrc: hoodie2,
+      name: "Japanese Hoodie",
+      alt: "Japanese Hoodie",
+      price: "189,40",
+      id: 6363222263127,
+      link: "hoodie-1",
+    },
+  ];
 
-  const allProducts = blackShirts.concat(acessorios);
+  const clothes = blackShirts.concat(hoodies);
+
+  const allProducts = blackShirts.concat(acessorios, hoodies);
 
   return (
-    <AuthContext.Provider value={{ blackShirts, acessorios, clothes, allProducts }}>
+    <AuthContext.Provider value={{ blackShirts, acessorios, hoodies, clothes, allProducts }}>
       {props.children}
     </AuthContext.Provider>
   );

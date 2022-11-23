@@ -8,19 +8,10 @@ const Acessorios = () => {
   let navigate = useNavigate();
 
   return (
-    <div>
-      {acessorios.map((acessorio) => (
-        <div
-          key={acessorio.id}
-          onClick={() => {
-            navigate(`/collection/${acessorio.link}`);
-          }}
-        >
-          <Card
-            productImage={acessorio.imageSrc}
-            productName={acessorio.name}
-            productPrice={acessorio.price}
-          />
+    <div className="display-section-container">
+      {acessorios.map((cloth) => (
+        <div key={cloth.id} onClick={() => navigate(`/collection/${cloth.link}`)} className="section-display">
+          <Card productImage={cloth.imageSrc} productName={cloth.name} productPrice={cloth.price} />
         </div>
       ))}
     </div>
