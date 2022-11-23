@@ -11,6 +11,8 @@ import img6 from "../imgs/Black-shirts/Feminino/caique-nascimento-BOHyxqepP9Y-un
 //Hoodies
 import hoodie1 from "../imgs/Hoodies/drew-dizzy-graham-jL8v8KWGv3E-unsplash.jpg";
 import hoodie2 from "../imgs/Hoodies/hoodieee.jpg";
+import brownHoodie from "../imgs/Hoodies/ali-saadat-ikLELWYbyxk-unsplash.jpg";
+import dogHoodie from "../imgs/Hoodies/karsten-winegeart-oU6KZTXhuvk-unsplash.jpg";
 
 //acessorios
 import bone1 from "../imgs/Acessorios/Bonés/hassan-ouajbir-Q-EWbNrfvVU-unsplash.jpg";
@@ -165,6 +167,22 @@ export const AuthProvider = (props) => {
       price: "189,40",
       id: 6363222263127,
       link: "hoodie-1",
+    },
+    {
+      imageSrc: brownHoodie,
+      name: "Brown Hoodie",
+      alt: "Brown Hoodie",
+      price: "189,40",
+      id: 63244412363127,
+      link: "brown-hoodie",
+    },
+    {
+      imageSrc: dogHoodie,
+      name: "Dog Hoodie",
+      alt: "Dog Hoodie",
+      price: "189,40",
+      id: 6321444963127,
+      link: "dog-hoodie",
     },
   ];
 
