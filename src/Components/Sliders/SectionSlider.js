@@ -46,7 +46,6 @@ const SectionSlider = ({ products, title, sliderClass }) => {
                 slidesPerGroup: 4,
               },
             }}
-            loop
           >
             {products.map((product) => (
               <SwiperSlide
