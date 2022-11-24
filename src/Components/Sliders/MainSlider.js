@@ -13,7 +13,7 @@ const MainSlider = () => {
   const images = [img1, img2, img3];
 
   return (
-    <>
+    <div className="w-full">
       {
         <Swiper
           modules={[Navigation, EffectFade, Autoplay, Pagination]}
@@ -33,13 +33,13 @@ const MainSlider = () => {
         >
           {images.map((image) => (
             <SwiperSlide key={image}>
-              <img src={image} className="w-[100vw] h-[52vw] object-cover"></img>
+              <img src={image} className="w-full h-[52vw] object-cover"></img>
             </SwiperSlide>
           ))}
           <div className="swiper-pagination"></div>
         </Swiper>
       }
-    </>
+    </div>
   );
 };
 export default MainSlider;

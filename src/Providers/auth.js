@@ -13,6 +13,11 @@ import hoodie1 from "../imgs/Hoodies/drew-dizzy-graham-jL8v8KWGv3E-unsplash.jpg"
 import hoodie2 from "../imgs/Hoodies/hoodieee.jpg";
 import brownHoodie from "../imgs/Hoodies/ali-saadat-ikLELWYbyxk-unsplash.jpg";
 import dogHoodie from "../imgs/Hoodies/karsten-winegeart-oU6KZTXhuvk-unsplash.jpg";
+import flowerHoodie from "../imgs/Hoodies/brian-asare-Cp1bJzNn5U8-unsplash.jpg";
+import seaHoodie from "../imgs/Hoodies/gabrielle-mustapich--Vz8MkLsn_8-unsplash.jpg";
+import pinkHoodie from "../imgs/Hoodies/joshua-rawson-harris-dN67hPE5KWY-unsplash.jpg";
+import codeBarHoodie from "../imgs/Hoodies/gesphotoss-Yc0mwK1O2f4-unsplash(1).jpg";
+import skullHoodie from "../imgs/Hoodies/gab-mWSXyWe2H9Q-unsplash.jpg";
 
 //acessorios
 import bone1 from "../imgs/Acessorios/Bonés/hassan-ouajbir-Q-EWbNrfvVU-unsplash.jpg";
@@ -181,8 +186,52 @@ export const AuthProvider = (props) => {
       name: "Dog Hoodie",
       alt: "Dog Hoodie",
       price: "189,40",
-      id: 6321444963127,
+      id: 6561963127,
       link: "dog-hoodie",
+    },
+    {
+      imageSrc: pinkHoodie,
+      name: "Pink Hoodie",
+      alt: "Pink Hoodie",
+      price: "189,40",
+      id: 632123463127,
+      link: "pink-hoodie",
+      gender: "f",
+    },
+    {
+      imageSrc: skullHoodie,
+      name: "Skull Hoodie",
+      alt: "Skull Hoodie",
+      price: "189,40",
+      id: 6463127,
+      link: "skull-hoodie",
+    },
+    {
+      imageSrc: seaHoodie,
+      name: "Tsunami Female Hoodie",
+      alt: "Tsunami Hoodie",
+      price: "189,40",
+      id: 6463127,
+      link: "tsunami-hoodie",
+      gender: "F",
+    },
+    {
+      imageSrc: codeBarHoodie,
+      name: "Code Bar Hoodie",
+      alt: "Code Bar Hoodie",
+      price: "189,40",
+      id: 6463213123127,
+      link: "skull-hoodie",
+      gender: "F",
+    },
+    {
+      imageSrc: flowerHoodie,
+      name: "Flower Hoodie",
+      alt: "Flower Hoodie",
+      price: "189,40",
+      id: 64631211117,
+      link: "skull-hoodie",
+      gender: "F",
     },
   ];
 

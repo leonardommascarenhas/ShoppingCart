@@ -10,8 +10,8 @@ const SectionSlider = ({ products, title, sliderClass }) => {
   let navigate = useNavigate();
 
   return (
-    <section>
-      <h2 className="text-center my-7">{title}</h2>
+    <section className="w-full text-center ">
+      <h2 className="my-7 mx-6 pl-6">{title}</h2>
       <div className="swiper-container">
         {
           <Swiper
