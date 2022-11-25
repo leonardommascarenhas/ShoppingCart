@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="flex flex-col justify-center items-center min-h-[120px] md:h-40 shadow-lg">
-      <div className="pl-7">
+      <div className="pl-3">
         <Link to="/" className="text-center">
           <h1 className="text-[50px] ">GBN</h1>
-          <p className=" -mt-2">Generic brand name Slogan</p>
+          <p className="-mt-2 pl-1">Generic brand name Slogan</p>
         </Link>
         <List />
       </div>

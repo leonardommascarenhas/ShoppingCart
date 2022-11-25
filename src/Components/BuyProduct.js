@@ -12,12 +12,10 @@ const BuyProduct = () => {
   });
 
   return (
-    <div className="grid grid-areas-layout grid-cols-layout h-full">
+    <div className="grid grid-areas-slim grid-cols-slim grid-rows-slim lg:grid-areas-layout lg:grid-cols-layout lg:grid-rows-layout">
       <img src={clickedCloth[0].imageSrc} className="grid-in-[product]"></img>
-      <div className="grid-in-[price]">
-        <p>{clickedCloth[0].name}</p>
-        <p>R$ {clickedCloth[0].price}</p>
-      </div>
+      <p className="grid-in-[name]">{clickedCloth[0].name}</p>
+      <p className="grid-in-[price]">R$ {clickedCloth[0].price}</p>
       <div className="grid-in-[size]">
         <p>Product description</p>
         <p>Product description</p>

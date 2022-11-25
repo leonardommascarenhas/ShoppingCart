@@ -11,7 +11,7 @@ const SectionSlider = ({ products, title, sliderClass }) => {
 
   return (
     <section className="w-full text-center ">
-      <h2 className="my-7 mx-6 pl-6">{title}</h2>
+      <h2 className="my-7 pl-2">{title}</h2>
       <div className="swiper-container">
         {
           <Swiper
