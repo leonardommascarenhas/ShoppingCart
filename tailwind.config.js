@@ -7,7 +7,19 @@ module.exports = {
       fontFamily: {
         title: ["Roboto"],
       },
+      gridTemplateAreas: {
+        layout: ["price product  size", "price   product  size", "price  product size"],
+      },
+      gridTemplateColumns: {
+        layout: "1fr 1fr 1fr",
+      },
+      gridTemplateRows: {
+        layout: "1fr 1fr",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@savvywombat/tailwindcss-grid-areas")],
+  variants: {
+    gridTemplateAreas: ["responsive"],
+  },
 };

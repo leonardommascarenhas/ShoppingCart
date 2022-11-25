@@ -12,11 +12,13 @@ const BuyProduct = () => {
   });
 
   return (
-    <div className="flex flex-col">
-      <img src={clickedCloth[0].imageSrc} className="w-screen"></img>
-      <div>
+    <div className="grid grid-areas-layout grid-cols-layout h-full">
+      <img src={clickedCloth[0].imageSrc} className="grid-in-[product]"></img>
+      <div className="grid-in-[price]">
         <p>{clickedCloth[0].name}</p>
         <p>R$ {clickedCloth[0].price}</p>
+      </div>
+      <div className="grid-in-[size]">
         <p>Product description</p>
         <p>Product description</p>
       </div>
