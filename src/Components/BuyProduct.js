@@ -23,11 +23,11 @@ const BuyProduct = () => {
   return (
     <div className="grid grid-areas-slim grid-cols-slim grid-rows-slim lg:grid-areas-layout lg:grid-cols-layout lg:grid-rows-layout">
       <img src={clickedCloth[0].imageSrc} className="grid-in-[product]"></img>
-      <h2 className="grid-in-[name]">{clickedCloth[0].name}</h2>
-      <h3 className="grid-in-[price]">R$ {clickedCloth[0].price}</h3>
-      <div className="grid-in-[size] flex flex-col">
+      <h1 className="grid-in-[name]">{clickedCloth[0].name}</h1>
+      <h2 className="grid-in-[price]">R$ {clickedCloth[0].price}</h2>
+      <section className="grid-in-[size] flex flex-col">
         <form action="" method="post" onSubmit={buy}>
-          <label htmlFor="tamanho">Tamanho:</label>
+          <label htmlFor="tamanho">Tamanho</label>
           <select className="max-w-[64px] border border-gray-900" ref={size}>
             <option value="P">P</option>
             <option value="M">M</option>
@@ -36,13 +36,13 @@ const BuyProduct = () => {
             <option value="XG">XG</option>
           </select>
           <br />
-          <label htmlFor="quantity">Quantidade:</label>
+          <label htmlFor="quantity">Quantidade</label>
           <div className="flex">
             <input type="number" name="quantity" id="quantity" className="border" ref={quantity} min="1" />
             <button className="width">Comprar</button>
           </div>
         </form>
-      </div>
+      </section>
     </div>
   );
 };
