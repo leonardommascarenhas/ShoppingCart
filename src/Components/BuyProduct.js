@@ -1,10 +1,18 @@
 import { useParams } from "react-router-dom";
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { AuthContext } from "../Providers/auth";
-import ClothesSizeBar from "./ClothesSizeBar";
 
 const BuyProduct = () => {
   const { allProducts } = React.useContext(AuthContext);
+  const size = useRef("P");
+  const quantity = useRef(0);
+
+  const buy = () => {
+    if (quantity.current.value <= 0) {
+      return alert("A quantidade escolhida deve ser maior que 0");
+    }
+    return alert(`você comprou ${quantity.current.value} unidades de tamanho ${size.current.value}`);
+  };
 
   let { product } = useParams();
 
@@ -18,8 +26,22 @@ const BuyProduct = () => {
       <h2 className="grid-in-[name]">{clickedCloth[0].name}</h2>
       <h3 className="grid-in-[price]">R$ {clickedCloth[0].price}</h3>
       <div className="grid-in-[size] flex flex-col">
-        <ClothesSizeBar />
-        <h4>Quantidade:</h4>
+        <form action="" method="post" onSubmit={buy}>
+          <label htmlFor="tamanho">Tamanho:</label>
+          <select className="max-w-[64px] border border-gray-900" ref={size}>
+            <option value="P">P</option>
+            <option value="M">M</option>
+            <option value="G">G</option>
+            <option value="GG">GG</option>
+            <option value="XG">XG</option>
+          </select>
+          <br />
+          <label htmlFor="quantity">Quantidade:</label>
+          <div className="flex">
+            <input type="number" name="quantity" id="quantity" className="border" ref={quantity} min="1" />
+            <button className="width">Comprar</button>
+          </div>
+        </form>
       </div>
     </div>
   );
