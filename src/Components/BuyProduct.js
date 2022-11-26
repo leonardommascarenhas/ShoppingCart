@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import React from "react";
 import { AuthContext } from "../Providers/auth";
+import ClothesSizeBar from "./ClothesSizeBar";
 
 const BuyProduct = () => {
   const { allProducts } = React.useContext(AuthContext);
@@ -17,8 +18,7 @@ const BuyProduct = () => {
       <p className="grid-in-[name]">{clickedCloth[0].name}</p>
       <p className="grid-in-[price]">R$ {clickedCloth[0].price}</p>
       <div className="grid-in-[size]">
-        <p>Product description</p>
-        <p>Product description</p>
+        <ClothesSizeBar />
       </div>
     </div>
   );
