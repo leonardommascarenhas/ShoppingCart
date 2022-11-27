@@ -41,6 +41,7 @@ export const AuthProvider = (props) => {
       id: 12783612873,
       link: "basic-1-m",
       gender: "M",
+      estoque: 8,
     },
     {
       imageSrc: img2,
@@ -50,6 +51,7 @@ export const AuthProvider = (props) => {
       id: 1298378912,
       link: "basic-2-m",
       gender: "M",
+      estoque: 8,
     },
     {
       imageSrc: img3,
@@ -59,6 +61,7 @@ export const AuthProvider = (props) => {
       id: 1289371902783,
       link: "branded-m",
       gender: "M",
+      estoque: 8,
     },
     {
       imageSrc: img4,
@@ -68,6 +71,7 @@ export const AuthProvider = (props) => {
       id: 128937190278,
       link: "whiteStriped-m",
       gender: "M",
+      estoque: 8,
     },
     {
       imageSrc: img5,
@@ -77,6 +81,7 @@ export const AuthProvider = (props) => {
       id: 128937130278,
       link: "basic-black-female",
       gender: "F",
+      estoque: 8,
     },
     {
       imageSrc: img6,
@@ -86,6 +91,7 @@ export const AuthProvider = (props) => {
       id: 128930278,
       link: "basic-Cropped-female",
       gender: "F",
+      estoque: 8,
     },
   ];
 
@@ -97,6 +103,7 @@ export const AuthProvider = (props) => {
       price: "79,90",
       id: 228937130278,
       link: "ny-jungle",
+      estoque: 8,
     },
     {
       imageSrc: bone2,
@@ -105,6 +112,7 @@ export const AuthProvider = (props) => {
       price: "54,90",
       id: 228937133378,
       link: "ice-cream",
+      estoque: 8,
     },
     {
       imageSrc: bone3,
@@ -113,6 +121,7 @@ export const AuthProvider = (props) => {
       price: "140,90",
       id: 676363127,
       link: "simple-hat",
+      estoque: 8,
     },
     {
       imageSrc: touca1,
@@ -121,6 +130,7 @@ export const AuthProvider = (props) => {
       price: "87,90",
       id: 6322127,
       link: "street-black-cap",
+      estoque: 8,
     },
     {
       imageSrc: touca2,
@@ -129,6 +139,7 @@ export const AuthProvider = (props) => {
       price: "60,90",
       id: 636363127,
       link: "green-inca-hat",
+      estoque: 8,
     },
     {
       imageSrc: touca3,
@@ -137,6 +148,7 @@ export const AuthProvider = (props) => {
       price: "79,90",
       id: 2123222,
       link: "street-pink-estampado",
+      estoque: 8,
     },
     {
       imageSrc: touca4,
@@ -145,6 +157,7 @@ export const AuthProvider = (props) => {
       price: "60,90",
       id: 22200030278,
       link: "whitered-cap",
+      estoque: 8,
     },
     {
       imageSrc: touca5,
@@ -153,6 +166,7 @@ export const AuthProvider = (props) => {
       price: "64,90",
       id: 12837130278,
       link: "pointed-cap",
+      estoque: 8,
     },
   ];
 
@@ -164,6 +178,7 @@ export const AuthProvider = (props) => {
       price: "249,90",
       id: 63111116363127,
       link: "branded-hoodie",
+      estoque: 8,
     },
     {
       imageSrc: hoodie2,
@@ -172,6 +187,7 @@ export const AuthProvider = (props) => {
       price: "189,40",
       id: 6363222263127,
       link: "hoodie-1",
+      estoque: 8,
     },
     {
       imageSrc: brownHoodie,
@@ -180,6 +196,7 @@ export const AuthProvider = (props) => {
       price: "189,40",
       id: 63244412363127,
       link: "brown-hoodie",
+      estoque: 8,
     },
     {
       imageSrc: dogHoodie,
@@ -188,6 +205,7 @@ export const AuthProvider = (props) => {
       price: "189,40",
       id: 6561963127,
       link: "dog-hoodie",
+      estoque: 8,
     },
     {
       imageSrc: pinkHoodie,
@@ -197,6 +215,7 @@ export const AuthProvider = (props) => {
       id: 632123463127,
       link: "pink-hoodie",
       gender: "f",
+      estoque: 8,
     },
     {
       imageSrc: skullHoodie,
@@ -205,6 +224,7 @@ export const AuthProvider = (props) => {
       price: "189,40",
       id: 6463127,
       link: "skull-hoodie",
+      estoque: 8,
     },
     {
       imageSrc: seaHoodie,
@@ -214,6 +234,7 @@ export const AuthProvider = (props) => {
       id: 6463127,
       link: "tsunami-hoodie",
       gender: "F",
+      estoque: 8,
     },
     {
       imageSrc: codeBarHoodie,
@@ -223,6 +244,7 @@ export const AuthProvider = (props) => {
       id: 6463213123127,
       link: "skull-hoodie",
       gender: "F",
+      estoque: 8,
     },
     {
       imageSrc: flowerHoodie,
@@ -232,6 +254,7 @@ export const AuthProvider = (props) => {
       id: 64631211117,
       link: "skull-hoodie",
       gender: "F",
+      estoque: 8,
     },
   ];
 
