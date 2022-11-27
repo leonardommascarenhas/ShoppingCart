@@ -8,15 +8,15 @@ module.exports = {
         title: ["Roboto"],
       },
       gridTemplateAreas: {
-        layout: ["price product  size", "price product size", "price product size"],
-        slim: ["name", "product", "price", "size"],
+        layout: ["name product  aside", "price product  aside", "size product aside", "size product aside"],
+        slim: ["name", "product", "price", "size", "aside"],
       },
       gridTemplateColumns: {
-        layout: "1fr 1fr 1fr",
+        layout: "1fr 2.5fr 1fr",
         slim: "1fr",
       },
       gridTemplateRows: {
-        layout: "1fr",
+        layout: "1fr 4fr 1fr 35fr",
         slim: "0.5fr 8fr 1fr 1fr",
       },
     },
