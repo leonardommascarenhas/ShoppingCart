@@ -42,7 +42,7 @@ const BuyProduct = () => {
             A Sunt incididunt Lorem nostrud velit qui anim id. Est aute cupidatat nostrud esse. Laborum duis
             exercitation sunt amet duis ipsum ea esse dolor. Irure minim veniam id enim deserunt aliquip ipsum
             officia eiusmod fugiat in.
-            <ul className="list-disc">
+            <ul className="list-disc list-inside">
               <li>Exercitation deserunt cupidatat laboris pariatur eu voluptate proident enim.</li>
               <li>Eu dolore consectetur culpa ipsum proident non minim commodo culpa duis nisi.</li>
               <li>Labore laborum pariatur est reprehenderit.</li>
