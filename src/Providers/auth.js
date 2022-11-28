@@ -103,7 +103,7 @@ export const AuthProvider = (props) => {
       price: "79,90",
       id: 228937130278,
       link: "ny-jungle",
-      estoque: 8,
+      estoque: 6,
     },
     {
       imageSrc: bone2,
