@@ -9,7 +9,7 @@ module.exports = {
       },
       gridTemplateAreas: {
         layout: ["name product  aside", ". product  aside", "size product aside", "size product aside"],
-        slim: ["name", "product", "size", "size", "aside"],
+        slim: ["name", "product", "size", "aside"],
       },
       gridTemplateColumns: {
         layout: "1fr 2.5fr 1fr",
@@ -17,7 +17,7 @@ module.exports = {
       },
       gridTemplateRows: {
         layout: "1fr 2fr 3fr 32fr",
-        slim: "0.5fr 8fr 1fr 1fr",
+        slim: "64px 1fr 1fr 1fr",
       },
     },
   },

@@ -18,7 +18,7 @@ const BuyProduct = () => {
   });
 
   return (
-    <div className="grid grid-areas-slim grid-cols-slim grid-rows-slim lg:grid-areas-layout lg:grid-cols-layout lg:grid-rows-layout min-h-[80vh]">
+    <div className="grid grid-areas-slim grid-cols-slim grid-rows-slim lg:grid-areas-layout lg:grid-cols-layout lg:grid-rows-layout h-full ">
       <img src={clickedCloth[0].imageSrc} className="grid-in-[product] h-full"></img>
       <h1 className="grid-in-[name] text-lg font-weight-700">{clickedCloth[0].name}</h1>
       <section className="grid-in-[size] flex flex-col">
