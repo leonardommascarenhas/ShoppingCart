@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const Header = () => {
   return (
-    <header className="flex flex-col justify-center items-center min-h-[120px] md:h-40 shadow-lg">
+    <header className="flex min-[500px]:flex-col justify-center items-center min-h-[120px] md:h-40 shadow-lg">
+      <Hamburguer />
       <div className="pl-3">
         <Link to="/" className="text-center">
-          <h1 className="text-[50px] ">GBN</h1>
+          <h1 className="text-[50px]">GBN</h1>
           <p className="-mt-2 pl-1">Generic brand name Slogan</p>
         </Link>
         <List />
@@ -35,4 +37,11 @@ const List = () => {
   );
 };
 
+const Hamburguer = () => {
+  return (
+    <>
+      <AiOutlineMenu className="rounded-full" />
+    </>
+  );
+};
 export default Header;

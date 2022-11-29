@@ -21,36 +21,36 @@ const BuyProduct = () => {
     <div className="grid grid-areas-slim grid-cols-slim grid-rows-slim lg:grid-areas-layout lg:grid-cols-layout lg:grid-rows-layout h-full ">
       <img src={clickedCloth[0].imageSrc} className="grid-in-[product] h-full"></img>
       <h1 className="grid-in-[name] text-lg font-weight-700">{clickedCloth[0].name}</h1>
-      <section className="grid-in-[size] flex flex-col">
-        <h2 className="grid-in-[price] ">R$ {clickedCloth[0].price}</h2>
+      <section className="grid-in-[size]">
+        <h2 className="text-[1.6rem]">R$ {clickedCloth[0].price}</h2>
         <form action="" method="post" onSubmit={buy}>
-          <label htmlFor="tamanho">Tamanho</label>
-          <select className="w-24 border border-gray-900" ref={size}>
-            <option value="P">P</option>
-            <option value="M">M</option>
-            <option value="G">G</option>
-            <option value="GG">GG</option>
-            <option value="XG">XG</option>
-          </select>
-          <br />
-          <label htmlFor="quantity">Quantidade</label>
-          <div className="flex">
-            <input type="number" name="quantity" id="quantity" ref={quantity} min="1" required />
-            <button className="width">Comprar</button>
+          <div className="flex flex-col">
+            <select className="w-24 border border-gray-900" ref={size}>
+              <option value="P">P</option>
+              <option value="M">M</option>
+              <option value="G">G</option>
+              <option value="GG">GG</option>
+              <option value="XG">XG</option>
+            </select>
+            <label htmlFor="quantity">Quantidade</label>
+            <div className="flex w-full">
+              <input type="number" name="quantity" id="quantity" ref={quantity} min="1" required />
+              <button className="rounded-lg bg-neutral-600 text-white hover:bg-neutral-800">Comprar</button>
+            </div>
           </div>
-          <aside className=" grid-in-[aside]">
-            A Sunt incididunt Lorem nostrud velit qui anim id. Est aute cupidatat nostrud esse. Laborum duis
-            exercitation sunt amet duis ipsum ea esse dolor. Irure minim veniam id enim deserunt aliquip ipsum
-            officia eiusmod fugiat in.
-            <ul className="list-disc list-inside">
-              <li>Exercitation deserunt cupidatat laboris pariatur eu voluptate proident enim.</li>
-              <li>Eu dolore consectetur culpa ipsum proident non minim commodo culpa duis nisi.</li>
-              <li>Labore laborum pariatur est reprehenderit.</li>
-              <li>Reprehenderit reprehenderit aliqua laborum est id commodo commodo do anim est</li>
-            </ul>
-          </aside>
         </form>
       </section>
+      <aside className=" grid-in-[aside]">
+        <span className="text-lg">{clickedCloth[0].name}</span> Lorem nostrud velit qui anim id. Est aute
+        cupidatat nostrud esse. Laborum duis exercitation sunt amet duis ipsum ea esse dolor. Irure minim
+        veniam id enim deserunt aliquip ipsum officia eiusmod fugiat in.
+        <ul className="list-disc list-inside">
+          <li>Exercitation deserunt cupidatat laboris pariatur eu voluptate proident enim.</li>
+          <li>Eu dolore consectetur culpa ipsum proident non minim commodo culpa duis nisi.</li>
+          <li>Labore laborum pariatur est reprehenderit.</li>
+          <li>Reprehenderit reprehenderit aliqua laborum est id commodo commodo do anim est</li>
+        </ul>
+      </aside>
     </div>
   );
 };
