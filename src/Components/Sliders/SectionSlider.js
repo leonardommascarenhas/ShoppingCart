@@ -11,7 +11,7 @@ const SectionSlider = ({ products, title, sliderClass }) => {
 
   return (
     <section className="w-full text-center ">
-      <h2 className="my-7">{title}</h2>
+      <h2 className="my-5 pl-1 text-lg font-semibold">{title}</h2>
       <div className="swiper-container">
         {
           <Swiper
@@ -54,7 +54,7 @@ const SectionSlider = ({ products, title, sliderClass }) => {
                   navigate(`/collection/${product.link}`);
                 }}
               >
-                <div className="swiper-content">
+                <div className="swiper-content font-light">
                   <Card
                     productImage={product.imageSrc}
                     productName={product.name}
