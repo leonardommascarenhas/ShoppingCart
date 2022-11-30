@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import ShoppingCart from "../../Components/ShoppingCart";
@@ -40,20 +41,28 @@ const List = () => {
 };
 
 const Hamburguer = () => {
+  const [isActive, setIsActive] = useState(false);
+  const onClick = () => setIsActive(!isActive);
+
+  console.log(isActive);
+
   return (
     <>
-      <AiOutlineMenu className="absolute left-6 rounded-full min-[500px]:hidden" />
-      <nav className="hidden w-full p-4 mt-2 gap-x-10 mr-2 align-center justify-center">
-        <Link to="/" className="menu-link">
+      <AiOutlineMenu
+        className="absolute left-6 rounded-full min-[500px]:hidden border-2 "
+        onClick={onClick}
+      />
+      <nav className="hidden left-6 top-0 z-50 gap-x-10 mr-2 bg-white">
+        <Link to="/" className="block px-4 py-4">
           Home
         </Link>
-        <Link to="/masculinas" className="menu-link">
+        <Link to="/masculinas" className="block px-4 py-4">
           Masculinas
         </Link>
-        <Link to="/femininas" className="menu-link">
+        <Link to="/femininas" className="block px-4 py-4">
           Femininas
         </Link>
-        <Link to="/acessorios" className="menu-link">
+        <Link to="/acessorios" className="block px-4 py-4">
           Acessorios
         </Link>
       </nav>
