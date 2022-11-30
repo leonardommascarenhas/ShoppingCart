@@ -20,11 +20,11 @@ const BuyProduct = () => {
   return (
     <div className="grid grid-areas-slim grid-cols-slim grid-rows-slim lg:grid-areas-layout lg:grid-cols-layout lg:grid-rows-layout h-full ">
       <img src={clickedCloth[0].imageSrc} className="grid-in-[product] h-full"></img>
-      <h1 className="grid-in-[name] text-lg font-weight-700">{clickedCloth[0].name}</h1>
-      <section className="grid-in-[size] flex flex-col gap-3 my-10">
+      <h1 className="grid-in-[name] text-lg font-semibold mb-3">{clickedCloth[0].name}</h1>
+      <section className="grid-in-[size] flex flex-col gap-3 my-7">
         <h2 className="text-lg">R$ {clickedCloth[0].price}</h2>
         <form action="" method="post" onSubmit={buy} className="flex flex-col flex-grow gap-4">
-          <div className="flex">
+          <div className="flex gap-3">
             <select className="flex-grow h-12 border border-gray-300" ref={size}>
               <option value="P">P</option>
               <option value="M">M</option>
@@ -36,11 +36,11 @@ const BuyProduct = () => {
               tabela de medidas
             </a>
           </div>
-          <label htmlFor="quantity">Quantidade</label>
+          <label htmlFor="quantity">Quantidade:</label>
           <div className="flex w-full h-12 gap-3">
             <input
               type="number"
-              className="w-1/5 border border-gray-300"
+              className="w-1/5 border border-gray-300 text-center"
               name="quantity"
               id="quantity"
               ref={quantity}

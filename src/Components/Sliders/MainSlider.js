@@ -13,7 +13,7 @@ const MainSlider = () => {
   const images = [img1, img2, img3];
 
   return (
-    <div className="w-full">
+    <div>
       {
         <Swiper
           modules={[Navigation, EffectFade, Autoplay, Pagination]}

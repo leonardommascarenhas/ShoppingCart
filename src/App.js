@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Modules/Header/Header";
-import ShoppingCart from "./Components/ShoppingCart";
 import Home from "./Pages/Home";
 import Femininas from "./Pages/Femininas";
 import Masculinas from "./Pages/Masculinas";
@@ -22,7 +21,6 @@ const App = () => {
           </Routes>
         </main>
       </BrowserRouter>
-      <ShoppingCart />
     </>
   );
 };

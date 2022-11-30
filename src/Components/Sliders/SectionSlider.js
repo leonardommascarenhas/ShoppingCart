@@ -35,12 +35,17 @@ const SectionSlider = ({ products, title, sliderClass }) => {
               },
               // when window width is >= 480px
               480: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+                slidesPerGroup: 2,
+              },
+              760: {
                 slidesPerView: 3,
                 spaceBetween: 20,
                 slidesPerGroup: 3,
               },
               // when window width is >= 640px
-              640: {
+              1024: {
                 slidesPerView: 4,
                 spaceBetween: 30,
                 slidesPerGroup: 4,
