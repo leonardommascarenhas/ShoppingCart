@@ -21,22 +21,33 @@ const BuyProduct = () => {
     <div className="grid grid-areas-slim grid-cols-slim grid-rows-slim lg:grid-areas-layout lg:grid-cols-layout lg:grid-rows-layout h-full ">
       <img src={clickedCloth[0].imageSrc} className="grid-in-[product] h-full"></img>
       <h1 className="grid-in-[name] text-lg font-weight-700">{clickedCloth[0].name}</h1>
-      <section className="grid-in-[size]">
-        <h2 className="text-[1.6rem]">R$ {clickedCloth[0].price}</h2>
-        <form action="" method="post" onSubmit={buy}>
-          <div className="flex flex-col">
-            <select className="w-24 border border-gray-900" ref={size}>
+      <section className="grid-in-[size] flex flex-col gap-3">
+        <h2 className="text-md">R$ {clickedCloth[0].price}</h2>
+        <form action="" method="post" onSubmit={buy} className="flex flex-col flex-grow gap-4">
+          <div className="flex">
+            <select className="flex-grow h-12 border border-gray-900" ref={size}>
               <option value="P">P</option>
               <option value="M">M</option>
               <option value="G">G</option>
               <option value="GG">GG</option>
               <option value="XG">XG</option>
             </select>
-            <label htmlFor="quantity">Quantidade</label>
-            <div className="flex w-full">
-              <input type="number" name="quantity" id="quantity" ref={quantity} min="1" required />
-              <button className="rounded-lg bg-neutral-600 text-white hover:bg-neutral-800">Comprar</button>
-            </div>
+            <a href="http://https://cdn.eutotal.com/imagens/medida-roupa-brasil-cke.jpg">tabela de medidas</a>
+          </div>
+          <label htmlFor="quantity">Quantidade</label>
+          <div className="flex w-full h-12 gap-3">
+            <input
+              type="number"
+              className="w-1/5"
+              name="quantity"
+              id="quantity"
+              ref={quantity}
+              min="1"
+              required
+            />
+            <button className="rounded-lg bg-neutral-500 text-white hover:bg-neutral-800 w-3/4">
+              Comprar
+            </button>
           </div>
         </form>
       </section>
