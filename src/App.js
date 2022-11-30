@@ -12,7 +12,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Header />
-        <main className="p-3">
+        <main className="p-3 font-roboto">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/collection/:product" element={<BuyProduct />} />

@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        title: ["Roboto"],
+        body: ["Roboto", "sans-serif"],
       },
       gridTemplateAreas: {
         layout: ["name product  aside", ". product  aside", "size product aside", "size product aside"],

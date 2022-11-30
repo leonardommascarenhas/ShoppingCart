@@ -22,7 +22,7 @@ const BuyProduct = () => {
       <img src={clickedCloth[0].imageSrc} className="grid-in-[product] h-full"></img>
       <h1 className="grid-in-[name] text-lg font-weight-700">{clickedCloth[0].name}</h1>
       <section className="grid-in-[size] flex flex-col gap-3 my-10">
-        <h2 className="text-md">R$ {clickedCloth[0].price}</h2>
+        <h2 className="text-lg">R$ {clickedCloth[0].price}</h2>
         <form action="" method="post" onSubmit={buy} className="flex flex-col flex-grow gap-4">
           <div className="flex">
             <select className="flex-grow h-12 border border-gray-300" ref={size}>
@@ -53,14 +53,20 @@ const BuyProduct = () => {
           </div>
         </form>
       </section>
-      <aside className=" grid-in-[aside]">
-        <span className="text-lg">{clickedCloth[0].name}</span> Lorem nostrud velit qui anim id. Est aute
-        cupidatat nostrud esse. Laborum duis exercitation sunt amet duis ipsum ea esse dolor. Irure minim
-        veniam id enim deserunt aliquip ipsum officia eiusmod fugiat in.
+      <aside className=" grid-in-[aside] flex flex-col gap-4 text-md font-light">
+        <div>
+          <span className="text-lg">{clickedCloth[0].name}</span> Lorem nostrud velit qui anim id. Est aute
+          cupidatat nostrud esse. Laborum duis exercitation sunt amet duis ipsum ea esse dolor. Irure minim
+          veniam id enim deserunt aliquip ipsum officia eiusmod fugiat in.
+        </div>
         <ul className="list-disc list-inside">
-          <li>Exercitation deserunt cupidatat laboris pariatur eu voluptate proident enim.</li>
-          <li>Eu dolore consectetur culpa ipsum proident non minim commodo culpa duis nisi.</li>
-          <li>Labore laborum pariatur est reprehenderit.</li>
+          <li className="mb-2">
+            Exercitation deserunt cupidatat laboris pariatur eu voluptate proident enim.
+          </li>
+          <li className="mb-2">
+            Eu dolore consectetur culpa ipsum proident non minim commodo culpa duis nisi.
+          </li>
+          <li className="mb-2">Labore laborum pariatur est reprehenderit.</li>
           <li>Reprehenderit reprehenderit aliqua laborum est id commodo commodo do anim est</li>
         </ul>
       </aside>
