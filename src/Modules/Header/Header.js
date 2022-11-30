@@ -52,20 +52,22 @@ const Hamburguer = () => {
         className="absolute left-6 rounded-full min-[500px]:hidden border-2 "
         onClick={onClick}
       />
-      <nav className="hidden left-6 top-0 z-50 gap-x-10 mr-2 bg-white">
-        <Link to="/" className="block px-4 py-4">
-          Home
-        </Link>
-        <Link to="/masculinas" className="block px-4 py-4">
-          Masculinas
-        </Link>
-        <Link to="/femininas" className="block px-4 py-4">
-          Femininas
-        </Link>
-        <Link to="/acessorios" className="block px-4 py-4">
-          Acessorios
-        </Link>
-      </nav>
+      {isActive == true && (
+        <nav className="absolute left-6 top-0 z-50 gap-x-10 mr-2 bg-white">
+          <Link to="/" className="block px-4 py-4">
+            Home
+          </Link>
+          <Link to="/masculinas" className="block px-4 py-4">
+            Masculinas
+          </Link>
+          <Link to="/femininas" className="block px-4 py-4">
+            Femininas
+          </Link>
+          <Link to="/acessorios" className="block px-4 py-4">
+            Acessorios
+          </Link>
+        </nav>
+      )}
     </>
   );
 };
