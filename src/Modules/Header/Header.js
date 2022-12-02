@@ -1,7 +1,7 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import ShoppingCart from "../../Components/ShoppingCart";
+import { useEffect, useState, useRef } from "react";
 
 const Header = () => {
   return (
@@ -42,19 +42,33 @@ const List = () => {
 
 const Hamburguer = () => {
   const [isActive, setIsActive] = useState(false);
-  const onClick = () => setIsActive(!isActive);
 
-  console.log(isActive);
+  let menuRef = useRef();
+
+  useEffect(() => {
+    let handler = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setIsActive(false);
+        console.log(menuRef.current);
+      }
+    };
+
+    document.addEventListener("mousedown", handler);
+
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  });
 
   return (
-    <>
-      {isActive === false && (
-        <AiOutlineMenu
-          className="absolute h-full rounded-full min-[500px]:hidden ml-2"
-          onClick={onClick}
-          size={18}
-        />
-      )}
+    <div ref={menuRef}>
+      <AiOutlineMenu
+        className="absolute h-full rounded-full min-[500px]:hidden ml-2"
+        onClick={() => {
+          setIsActive(!isActive);
+        }}
+        size={18}
+      />
       {isActive === true && (
         <nav className="absolute left-6 top-0 z-50 gap-x-10 mr-2 bg-white">
           <Link to="/" className="block px-4 py-4">
@@ -71,7 +85,7 @@ const Hamburguer = () => {
           </Link>
         </nav>
       )}
-    </>
+    </div>
   );
 };
 export default Header;
