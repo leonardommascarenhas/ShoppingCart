@@ -5,12 +5,14 @@ import ShoppingCart from "../../Components/ShoppingCart";
 
 const Header = () => {
   return (
-    <header className="relative">
+    <header className="relative shadow pb-3">
       <Hamburguer />
-      <Link to="/" className="flex flex-col mx-auto justify-center items-center">
-        <h1 className="text-[36px] lg:text-[48px]">GBN</h1>
-        <p className="-mt-2 pl-1 text-xs">Generic Slogan</p>
-      </Link>
+      <div className="flex flex-col mx-auto justify-center items-center">
+        <Link to="/" className="inline text-center">
+          <h1 className="inline text-[36px] lg:text-[48px]">GBN</h1>
+          <p className="-mt-2 pl-1 text-xs">Generic Slogan</p>
+        </Link>
+      </div>
       <List />
       <ShoppingCart />
     </header>
@@ -20,7 +22,7 @@ const Header = () => {
 const List = () => {
   return (
     <>
-      <nav className="hidden min-[500px]:flex w-full mt-2 pb-3 gap-x-10 align-center justify-center">
+      <nav className="hidden min-[500px]:flex w-full mt-2 pb-1 gap-x-10 align-center justify-center">
         <Link to="/" className="menu-link">
           Home
         </Link>
@@ -48,7 +50,7 @@ const Hamburguer = () => {
     <>
       {isActive === false && (
         <AiOutlineMenu
-          className="absolute left-4 rounded-full min-[500px]:hidden ml-2"
+          className="absolute h-full rounded-full min-[500px]:hidden ml-2"
           onClick={onClick}
           size={18}
         />
