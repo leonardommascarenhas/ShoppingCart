@@ -5,13 +5,12 @@ import ShoppingCart from "../../Components/ShoppingCart";
 
 const Header = () => {
   return (
-    <header className="relative flex justify-center items-center w-full h-auto pb-3 shadow-lg min-[500px]:flex-col min-[500px]:pl-4">
+    <header className="relative">
       <Hamburguer />
       <Link to="/" className="flex flex-col mx-auto justify-center items-center">
         <h1 className="text-[36px] lg:text-[48px]">GBN</h1>
         <p className="-mt-2 pl-1 text-xs">Generic Slogan</p>
       </Link>
-
       <List />
       <ShoppingCart />
     </header>
@@ -21,7 +20,7 @@ const Header = () => {
 const List = () => {
   return (
     <>
-      <nav className="hidden min-[500px]:flex w-full mt-2 pb-6 gap-x-10 mr-2 align-center justify-center">
+      <nav className="hidden min-[500px]:flex w-full mt-2 pb-3 gap-x-10 align-center justify-center">
         <Link to="/" className="menu-link">
           Home
         </Link>
@@ -47,12 +46,14 @@ const Hamburguer = () => {
 
   return (
     <>
-      <AiOutlineMenu
-        className="absolute left-4 rounded-full min-[500px]:hidden ml-2"
-        onClick={onClick}
-        size={18}
-      />
-      {isActive == true && (
+      {isActive === false && (
+        <AiOutlineMenu
+          className="absolute left-4 rounded-full min-[500px]:hidden ml-2"
+          onClick={onClick}
+          size={18}
+        />
+      )}
+      {isActive === true && (
         <nav className="absolute left-6 top-0 z-50 gap-x-10 mr-2 bg-white">
           <Link to="/" className="block px-4 py-4">
             Home

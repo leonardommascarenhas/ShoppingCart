@@ -11,7 +11,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Header />
-        <main className="p-3 font-roboto">
+        <main className="font-roboto">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/collection/:product" element={<BuyProduct />} />
