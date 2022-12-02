@@ -7,8 +7,8 @@ const Header = () => {
   return (
     <header className="relative shadow pb-3">
       <Hamburguer />
-      <div className="flex flex-col mx-auto justify-center items-center">
-        <Link to="/" className="inline text-center">
+      <div className="flex flex-col justify-center items-center">
+        <Link to="/" className="inline mx-auto text-center">
           <h1 className="inline text-[36px] lg:text-[48px]">GBN</h1>
           <p className="-mt-2 pl-1 text-xs">Generic Slogan</p>
         </Link>

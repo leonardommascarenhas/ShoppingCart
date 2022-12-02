@@ -10,14 +10,17 @@ module.exports = {
       gridTemplateAreas: {
         layout: ["name product  aside", ". product  aside", "size product aside", "size product aside"],
         slim: ["name", "product", "size", "aside"],
+        mid: ["name product", "size product", "aside product"],
       },
       gridTemplateColumns: {
         layout: "1fr 2.5fr 1fr",
         slim: "1fr",
+        mid: "1fr 2fr",
       },
       gridTemplateRows: {
         layout: "1fr 2fr 3fr 32fr",
         slim: "32px 1fr auto fr",
+        mid: "auto auto 1fr",
       },
     },
   },
