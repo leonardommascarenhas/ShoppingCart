@@ -28,11 +28,12 @@ import touca2 from "../imgs/Acessorios/Toucas/jordan-whitfield-Lprffwrv9cY-unspl
 import touca3 from "../imgs/Acessorios/Toucas/logan-weaver-lgnwvr-C47a33QNi18-unsplash.jpg";
 import touca4 from "../imgs/Acessorios/Toucas/taan-huyn-gIrrIydPu6U-unsplash.jpg";
 import touca5 from "../imgs/Acessorios/Toucas/yannic-laderach-nwR9BCNgZJc-unsplash.jpg";
-import ShoppingCart from "../Components/ShoppingCart";
 
 export const AuthContext = React.createContext();
 
 export const AuthProvider = (props) => {
+  const [toBuyClothes, setToBuyClothes] = useState(0);
+
   const blackShirts = [
     {
       imageSrc: img1,
@@ -264,7 +265,9 @@ export const AuthProvider = (props) => {
   const allProducts = blackShirts.concat(acessorios, hoodies);
 
   return (
-    <AuthContext.Provider value={{ blackShirts, acessorios, hoodies, clothes, allProducts }}>
+    <AuthContext.Provider
+      value={{ blackShirts, acessorios, hoodies, clothes, allProducts, toBuyClothes, setToBuyClothes }}
+    >
       {props.children}
     </AuthContext.Provider>
   );
