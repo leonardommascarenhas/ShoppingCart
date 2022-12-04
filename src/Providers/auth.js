@@ -32,7 +32,7 @@ import touca5 from "../imgs/Acessorios/Toucas/yannic-laderach-nwR9BCNgZJc-unspla
 export const AuthContext = React.createContext();
 
 export const AuthProvider = (props) => {
-  const [toBuyClothes, setToBuyClothes] = useState(0);
+  const [toBuyClothes, setToBuyClothes] = useState([]);
 
   const blackShirts = [
     {

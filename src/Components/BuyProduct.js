@@ -3,11 +3,12 @@ import React, { useRef, useEffect } from "react";
 import { AuthContext } from "../Providers/auth";
 
 const BuyProduct = () => {
-  const { allProducts } = React.useContext(AuthContext);
+  const { allProducts, toBuyClothes, setToBuyClothes } = React.useContext(AuthContext);
   const size = useRef("P");
   const quantity = useRef(1);
 
-  const buy = () => {
+  const buy = (cloth) => {
+    setToBuyClothes((current) => [...current, cloth]);
     return alert(`você comprou ${quantity.current.value} unidades de tamanho ${size.current.value}`);
   };
 
@@ -24,7 +25,14 @@ const BuyProduct = () => {
       <h1 className="grid-in-[name] text-lg font-semibold mb-3">{clickedCloth[0].name}</h1>
       <section className="grid-in-[size] flex flex-col gap-3 my-7">
         <h2 className="text-lg">R$ {clickedCloth[0].price}</h2>
-        <form action="" method="post" onSubmit={buy} className="flex flex-col flex-grow gap-4">
+        <form
+          action=""
+          onSubmit={(e) => {
+            e.preventDefault();
+            buy(clickedCloth[0]);
+          }}
+          className="flex flex-col flex-grow gap-4"
+        >
           <div className="flex gap-3">
             <select className="flex-grow h-12 border border-gray-300" ref={size}>
               <option value="P">P</option>
