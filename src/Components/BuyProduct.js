@@ -20,6 +20,7 @@ const BuyProduct = () => {
   return (
     <div className="p-3 grid grid-areas-slim grid-cols-slim grid-rows-slim md:grid-areas-mid md:grid-cols-mid md:grid-rows-mid lg:grid-areas-layout lg:grid-cols-layout lg:grid-rows-layout ">
       <img src={clickedCloth[0].imageSrc} className="grid-in-[product] h-full md:pl-6"></img>
+
       <h1 className="grid-in-[name] text-lg font-semibold mb-3">{clickedCloth[0].name}</h1>
       <section className="grid-in-[size] flex flex-col gap-3 my-7">
         <h2 className="text-lg">R$ {clickedCloth[0].price}</h2>
@@ -37,6 +38,7 @@ const BuyProduct = () => {
             </a>
           </div>
           <label htmlFor="quantity">Quantidade:</label>
+
           <div className="flex w-full h-12 gap-3">
             <input
               type="number"
@@ -53,6 +55,7 @@ const BuyProduct = () => {
           </div>
         </form>
       </section>
+
       <aside className=" grid-in-[aside] flex flex-col gap-4 text-md font-light">
         <div>
           <span className="text-lg">{clickedCloth[0].name}</span> Lorem nostrud velit qui anim id. Est aute
