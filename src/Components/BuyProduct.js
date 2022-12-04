@@ -8,7 +8,9 @@ const BuyProduct = () => {
   const quantity = useRef(1);
 
   const buy = (cloth) => {
-    setToBuyClothes((current) => [...current, cloth]);
+    for (let i = 0; i < quantity.current.value; i++) {
+      setToBuyClothes((current) => [...current, cloth]);
+    }
     return alert(`você comprou ${quantity.current.value} unidades de tamanho ${size.current.value}`);
   };
 

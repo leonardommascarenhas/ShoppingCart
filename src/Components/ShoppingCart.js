@@ -11,7 +11,7 @@ const ShoppingCart = () => {
           {<AiOutlineShoppingCart size={20} />}
         </span>
         <span className="absolute w-4 h-4 -bottom-1.5 -right-1 bg-red-500 rounded-full flex items-center justify-center">
-          {toBuyClothes.length}
+          {console.log(toBuyClothes)}
         </span>
       </div>
     </>
