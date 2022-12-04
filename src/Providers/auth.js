@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //black shirts
 import img1 from "../imgs/Black-shirts/Masculino/allef-vinicius-flFI_7Rs6Ik-unsplash.jpg";
@@ -28,8 +28,9 @@ import touca2 from "../imgs/Acessorios/Toucas/jordan-whitfield-Lprffwrv9cY-unspl
 import touca3 from "../imgs/Acessorios/Toucas/logan-weaver-lgnwvr-C47a33QNi18-unsplash.jpg";
 import touca4 from "../imgs/Acessorios/Toucas/taan-huyn-gIrrIydPu6U-unsplash.jpg";
 import touca5 from "../imgs/Acessorios/Toucas/yannic-laderach-nwR9BCNgZJc-unsplash.jpg";
+import ShoppingCart from "../Components/ShoppingCart";
 
-export const AuthContext = React.createContext([]);
+export const AuthContext = React.createContext();
 
 export const AuthProvider = (props) => {
   const blackShirts = [
