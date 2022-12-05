@@ -64,7 +64,7 @@ const BuyProduct = () => {
               onChange={() =>
                 quantity.current.value > clickedCloth[0].inventory
                   ? (quantity.current.value = clickedCloth[0].inventory)
-                  : console.log(quantity.current.value)
+                  : quantity.current.value
               }
               required
             />
