@@ -7,6 +7,10 @@ const BuyProduct = () => {
   const size = useRef("P");
   const quantity = useRef(1);
 
+  useEffect(() => {
+    console.log(toBuyClothes);
+  }, [toBuyClothes]);
+
   const buy = (cloth) => {
     for (let i = 0; i < quantity.current.value; i++) {
       setToBuyClothes((current) => [...current, cloth]);
@@ -57,6 +61,11 @@ const BuyProduct = () => {
               id="quantity"
               ref={quantity}
               min="1"
+              onChange={() =>
+                quantity.current.value > clickedCloth[0].inventory
+                  ? (quantity.current.value = clickedCloth[0].inventory)
+                  : console.log(quantity.current.value)
+              }
               required
             />
             <button className="rounded-lg bg-neutral-800 lg:bg-neutral-500 text-white hover:bg-neutral-800 w-3/4">

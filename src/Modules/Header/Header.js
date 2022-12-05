@@ -49,7 +49,6 @@ const Hamburguer = () => {
     let handler = (e) => {
       if (!menuRef.current.contains(e.target)) {
         setIsActive(false);
-        console.log(menuRef.current);
       }
     };
 

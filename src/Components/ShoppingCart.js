@@ -4,6 +4,7 @@ import { AuthContext } from "../Providers/auth";
 
 const ShoppingCart = () => {
   const { toBuyClothes } = React.useContext(AuthContext);
+
   return (
     <>
       <div className="fixed z-10 right-5 top-5  ">
@@ -11,7 +12,7 @@ const ShoppingCart = () => {
           {<AiOutlineShoppingCart size={20} />}
         </span>
         <span className="absolute w-4 h-4 -bottom-1.5 -right-1 bg-red-500 rounded-full flex items-center justify-center">
-          {console.log(toBuyClothes)}
+          {toBuyClothes.length}
         </span>
       </div>
     </>
