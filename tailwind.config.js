@@ -18,7 +18,7 @@ module.exports = {
         mid: "1fr 2fr",
       },
       gridTemplateRows: {
-        layout: "1fr 2fr 3fr 32fr",
+        layout: "auto 2fr 1fr 1fr",
         slim: "32px 1fr auto fr",
         mid: "auto auto 1fr",
       },

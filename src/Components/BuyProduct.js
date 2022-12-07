@@ -73,9 +73,16 @@ const BuyProduct = () => {
 
       <aside className=" grid-in-[aside] flex flex-col gap-4 text-md font-light">
         <div>
-          <span className="text-lg">{clickedCloth[0].name}</span> Lorem nostrud velit qui anim id. Est aute
-          cupidatat nostrud esse. Laborum duis exercitation sunt amet duis ipsum ea esse dolor. Irure minim
-          veniam id enim deserunt aliquip ipsum officia eiusmod fugiat in.
+          <p className="mb-3">
+            <span className="text-lg">{clickedCloth[0].name}</span> Lorem nostrud velit qui anim id. Est aute
+            cupidatat nostrud esse. Laborum duis exercitation sunt amet duis ipsum ea esse dolor. Irure minim
+            veniam id enim deserunt aliquip ipsum officia eiusmod fugiat in.
+          </p>
+          <p>
+            Laboris minim deserunt occaecat consequat aute cupidatat. Incididunt exercitation incididunt amet
+            veniam proident. Aute dolor ullamco non nisi aliqua mollit est aliquip proident ad Lorem esse. Et
+            anim Lorem cupidatat et ut magna ea aliqua.
+          </p>
         </div>
         <ul className="list-disc list-inside">
           <li className="mb-2">

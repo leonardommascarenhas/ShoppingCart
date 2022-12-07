@@ -5,6 +5,7 @@ import Femininas from "./Pages/Femininas";
 import Masculinas from "./Pages/Masculinas";
 import BuyProduct from "./Components/BuyProduct";
 import Acessorios from "./Pages/Acessorios";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="acessorios" element={<Acessorios />} />
           </Routes>
         </main>
+        <Footer />
       </BrowserRouter>
     </>
   );
