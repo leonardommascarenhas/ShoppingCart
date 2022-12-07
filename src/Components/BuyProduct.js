@@ -7,10 +7,6 @@ const BuyProduct = () => {
   const size = useRef("P");
   const quantity = useRef(1);
 
-  useEffect(() => {
-    console.log(toBuyClothes);
-  }, [toBuyClothes]);
-
   const buy = (cloth) => {
     for (let i = 0; i < quantity.current.value; i++) {
       setToBuyClothes((current) => [...current, cloth]);
@@ -26,7 +22,7 @@ const BuyProduct = () => {
 
   return (
     <div className="p-3 grid grid-areas-slim grid-cols-slim grid-rows-slim md:grid-areas-mid md:grid-cols-mid md:grid-rows-mid lg:grid-areas-layout lg:grid-cols-layout lg:grid-rows-layout ">
-      <img src={clickedCloth[0].imageSrc} className="grid-in-[product] h-full md:pl-6"></img>
+      <img src={clickedCloth[0].imageSrc} className="grid-in-[product] h-full md:pl-6 lg:px-6"></img>
 
       <h1 className="grid-in-[name] text-lg font-semibold mb-3">{clickedCloth[0].name}</h1>
       <section className="grid-in-[size] flex flex-col gap-3 my-7">

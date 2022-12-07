@@ -8,7 +8,7 @@ module.exports = {
         body: ["Roboto", "sans-serif"],
       },
       gridTemplateAreas: {
-        layout: ["name product  aside", ". product  aside", "size product aside", "size product aside"],
+        layout: ["name product  size", "aside product  size", "aside product size", "aside product size"],
         slim: ["name", "product", "size", "aside"],
         mid: ["name product", "size product", "aside product"],
       },
