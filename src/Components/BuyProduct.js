@@ -7,18 +7,20 @@ const BuyProduct = () => {
   const size = useRef("P");
   const quantity = useRef(1);
 
-  const buy = (cloth) => {
-    for (let i = 0; i < quantity.current.value; i++) {
-      setToBuyClothes((current) => [...current, cloth]);
-    }
-    return alert(`você comprou ${quantity.current.value} unidades de tamanho ${size.current.value}`);
-  };
-
   let { product } = useParams();
 
   const clickedCloth = allProducts.filter((cloth) => {
     return cloth.link === product;
   });
+
+  const buy = (cloth) => {
+    for (let i = 0; i < quantity.current.value; i++) {
+      setToBuyClothes((current) => [...current, cloth]);
+    }
+    cloth.inventory -= quantity.current.value;
+
+    return alert(`você comprou ${quantity.current.value} unidades de tamanho ${size.current.value}`);
+  };
 
   return (
     <div className="p-3 grid grid-areas-slim grid-cols-slim grid-rows-slim md:grid-areas-mid md:grid-cols-mid md:grid-rows-mid lg:grid-areas-layout lg:grid-cols-layout lg:grid-rows-layout ">
